@@ -1,25 +1,89 @@
-@media (min-width: 640px) {
+@media (width >= 751px) {
+    #lightboxOverlay, #lightbox {
+        min-width: var(--content-width) !important;
+        width: 100% !important;
+    }
+
+    .sp320, .sp375, .sp425 {
+        display: none;
+    }
+
+    .wow {
+        animation-duration: 1s;
+        animation-delay: .2s;
+    }
+
+    .sp {
+        display: none !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--main-cl);
+    }
+
+    .to-top:hover {
+        background: var(--main-cl);
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        -ms-touch-action: none;
+        touch-action: none;
+        -webkit-overflow-scrolling: auto;
+    }
+
+    .menu-list .menu-tt:hover {
+        color: var(--main-cl);
+    }
+
+    .dropdown:hover>.sub-menu {
+        transform: translateY(0);
+        pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+    }
+
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 200px;
+        transition: all .3s ease;
+        transform: translateY(10px);
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, .16);
+    }
+
+    .sub-menu a:hover {
+        color: #fff;
+        background-color: var(--main-cl);
+    }
+}
+
+@media(width >=640px) {
     .container {
         max-width: 640px;
     }
 }
 
-@media (min-width: 768px) {
+@media(width >= 768px) {
     .container {
         max-width: 768px;
     }
 }
 
-@media (min-width: 1024px) {
+@media(width >= 1024px) {
     .container {
         max-width: 1024px;
     }
 }
 
-@media (min-width: 1290px) {
+@media(width >= 1290px) {
     .container {
         max-width: 1290px;
     }
 }
-
-
