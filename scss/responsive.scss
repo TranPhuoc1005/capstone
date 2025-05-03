@@ -114,6 +114,42 @@
             }
         }
     }
+
+    .cta .btn a {
+        &:hover {
+            box-shadow: 0 0 #000, 0 0 #0000, 0 0 #000, 0 0 #0000, 0 20px 25px -5px rgba($color: #000000, $alpha: .1), 0 8px 10px -6px rgba($color: #000000, $alpha: .1);
+        }
+    }
+
+    .contact {
+        .desc {
+            margin-bottom: 80px;
+        }
+    }
+
+    .ft__left {
+        &--social {
+            a {
+                svg {
+                    transition: .2s linear;
+                }
+                &:hover {
+                    svg {
+                        fill: #4E6BFF;
+                    }
+                }
+            }
+        }
+    }
+    .ft__right {
+        &--menu {
+            a {
+                &:hover {
+                    color: #4e6bff;
+                }
+            }
+        }
+    }
 }
 
 @media(width >= 1290px) {
