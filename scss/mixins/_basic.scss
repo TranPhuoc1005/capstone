@@ -1,0 +1,59 @@
+@import './functions';
+
+@mixin size($width, $height: $width) {
+   width: $width;
+   height: $height;
+}
+
+@mixin pos-mid() {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+@mixin flex-mid() {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+@mixin hidden() {
+   opacity: 0;
+   visibility: hidden;
+}
+
+@mixin visible() {
+   opacity: 1;
+   visibility: visible;
+}
+
+@mixin line-clamp($args) {
+   display: -webkit-box;
+   -webkit-line-clamp: $args;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+@mixin lh($lh, $fz) {
+   line-height: ($lh / $fz);
+}
+
+@mixin forward($property, $minvalue, $maxvalue, $minv, $maxv, $view: vw) {
+   --min-value: #{$minvalue};
+   --max-value: #{$maxvalue};
+   --min-view: #{$minv};
+   --max-view: #{$maxv};
+   --value: max(min(calc((var(--max-value) - var(--min-value)) * ((100#{$view} - var(--min-view) * 1px) / (var(--max-view) - var(--min-view))) + calc(var(--min-value) * 1px)), calc(var(--max-value) * 1px)), calc(var(--min-value) * 1px));
+   #{$property}: var(--value);
+}
+
+@mixin reverse($property, $maxvalue, $minvalue, $maxv, $minv, $view: vw) {
+   --min-value: #{$minvalue};
+   --max-value: #{$maxvalue};
+   --min-view: #{$minv};
+   --max-view: #{$maxv};
+   --value: max(var(--max-value) * 1px, min(calc(var(--max-value) * 1px + (var(--min-value) - var(--max-value)) * ((100#{$view} - var(--max-view) * 1px) / (var(--min-view) - var(--max-view)))), var(--min-value) * 1px));
+   #{$property}: var(--value);
+}
