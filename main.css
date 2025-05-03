@@ -12,6 +12,89 @@ p {
     color: gray;
 }
 
+
+
+
+/* Carousel  */
+@media (min-width: 1536px) {
+  .\32xl\:ud-w-187\.5 {
+      width: 46.875rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:ud-h-171\.5 {
+      height: 42.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fn {
+      display: block;
+  }
+}
+
+.r {
+  top: 0px;
+}
+
+.q {
+  right: 0px;
+}
+
+.h {
+  position: absolute;
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:ud-block {
+      display: block;
+  }
+}
+
+.ua {
+  z-index: 1;
+}
+
+.-ud-left-\[10\%\] {
+  left: -10%;
+}
+
+.t {
+  top: 40%;
+}
+
+.h {
+  position: absolute;
+}
+
+.va {
+  z-index: 10;
+}
+
+.u {
+  right: 20%;
+}
+
+.p {
+  bottom: 0px;
+}
+
+.w {
+  bottom: 10%;
+}
+
+.r {
+  top: 0px;
+}
+
+.q {
+  right: 0px;
+}
+
+
+
+
 /* Features  */
 .feature_1 img {
     background-color: rgb(243 106 141);
@@ -30,6 +113,20 @@ p {
     border-radius: 9999px;
     padding: 25px;
 }
+
+.Rotate__Animation {
+  animation: quayCham 13s linear infinite;
+}
+
+@keyframes quayCham {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 /* Why Choose Us  */
 @media (min-width: 768px) {
@@ -171,38 +268,6 @@ p {
 
 
 
-
-  /* CSS tùy chỉnh để ẩn/hiện các gói dựa trên trạng thái checkbox
-  input[type="checkbox"]:not(:checked) ~ div > #yearly-starter,
-  input[type="checkbox"]:not(:checked) ~ div > #yearly-growth,
-  input[type="checkbox"]:not(:checked) ~ div > #yearly-business {
-    display: none !important;
-  }
-
-  input[type="checkbox"]:checked ~ div > #monthly-starter,
-  input[type="checkbox"]:checked ~ div > #monthly-growth,
-  input[type="checkbox"]:checked ~ div > #monthly-business {
-    display: none !important;
-  } */
-
-/* Services Offer  */
-
-/* Our Teams  */
-/* .our__team {
-  position: relative;
-} */
-
-/* .team__bg {
-  background-color: #f4f7fa;
-  width: 100%;
-  height: 60%;
-  display: block;
-  left: 0;
-  top: 25px;
-  position: absolute;
-  --tw-bg-opacity: 1;
-} */
-
 /* Our Team  */
 .overlay {
   background-color: rgb(78 107 255);
@@ -274,4 +339,35 @@ p {
 
 .DayFreeTrial, .btnPayment {
   color: black;
+}
+
+
+/* BackToTop  */
+.backtotop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  opacity: 0;
+  visibility: hidden;
+  width: 50px;
+  height: 50px;
+  background: rgb(78 107 255);
+  border-radius: 8px;
+  line-height: 50px;
+  text-align: center;
+  align-items: center;
+  display: block;
+  color: white;
+  box-shadow: 0 0 60px 0 rgb(0, 0, 0, 0.1);
+  transition: all 1s;
+  font-size: 22px;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 1;
 }

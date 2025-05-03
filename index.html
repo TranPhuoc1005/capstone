@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
-
+    <title>Base Project</title>
 
     <!-- Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- CDN tailwind css  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -64,22 +64,20 @@
                                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Features</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pages</a>
+                            <!-- <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pages</a> -->
 
-
-
-                            <!-- <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                                 class="text-gray text-xl hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
                                 type="button">Pages <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg>
-                            </button> -->
+                            </button>
 
                             <!-- Dropdown menu -->
-                            <!-- <div id="dropdown"
+                            <div id="dropdown"
                                 class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
                                     aria-labelledby="dropdownDefaultButton">
@@ -101,7 +99,7 @@
                                             out</a>
                                     </li>
                                 </ul>
-                            </div> -->
+                            </div>
 
                         </li>
                         <li>
@@ -117,9 +115,10 @@
 
 
     <!-- Casousel -->
-    <section class="carousel container mx-auto pt-40 pb-12 md:py-24 lg:py-52">
+    <section class="carousel container mx-auto pt-40 pb-12 md:py-24 lg:py-52 relative">
         <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-8 md:gap-12 lg:gap-20">
-            <div class="carousel__text space-y-6 md:space-y-8 lg:space-y-12">
+            <div class=" animate__animated animate__fadeInLeft wow carousel__text space-y-6 md:space-y-8 lg:space-y-12"
+                data-wow-duration="3s">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight">
                     We specialize in <span class="text-blue-600">UI/UX</span>, <br class="hidden md:block">Web
                     Development, <br class="hidden md:block">Digital Marketing.
@@ -145,19 +144,24 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel__image md:w-5/12 lg:w-4/12 hidden md:block">
-                <img src="./images/bank.png" alt="Placeholder Image" class="w-full rounded-lg shadow-lg">
+            <div
+                class="carousel__image md:w-5/12 lg:w-4/12 hidden md:block xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
+                <img src="./images/shape-01.svg" alt="Shape 1" class="xc 2xl:ud-block h t -ud-left-[10%] ua">
+                <img src="./images/shape-02.svg" alt="Shape 2" class="xc 2xl:ud-block h u p va">
+                <img src="./images/shape-03.svg" alt="Shape 3" class="xc 2xl:ud-block h v w va">
+                <img src="./images/shape-04.svg" alt="Shape 4" class="h q r">
+                <img src="./images/hero.png" alt="Woman" class="h q r ua">
             </div>
         </div>
     </section>
 
 
     <!-- Features  -->
-    <!-- Features  -->
     <section class="pt-2 pb-8">
         <div class="container mx-auto">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                <div class="feature_1 flex items-center justify-center">
+                <div class=" animate__animated animate__fadeInDown wow feature_1 flex items-center justify-center"
+                    data-wow-duration="2s">
                     <div class="">
                         <img src="./images/icon-01.svg" alt="#">
                     </div>
@@ -168,7 +172,8 @@
                     </div>
                 </div>
 
-                <div class="feature_2 flex items-center justify-center">
+                <div class=" animate__animated animate__fadeInDown wow feature_2 flex items-center justify-center"
+                    data-wow-duration="3s" data-wow-delay="0.5s">
                     <div class="">
                         <img src="./images/icon-02.svg" alt="#">
                     </div>
@@ -179,7 +184,8 @@
                     </div>
                 </div>
 
-                <div class="feature_3 flex items-center justify-center">
+                <div class=" animate__animated animate__fadeInDown wow feature_3 flex items-center justify-center"
+                    data-wow-duration="4s" data-wow-delay="1s">
                     <div class="">
                         <img src="./images/icon-03.svg" alt="#">
                     </div>
@@ -198,8 +204,9 @@
     <section class="pb-2 mt-33 mb-35">
         <div class="mx-auto container">
             <div class="flex items-center">
-                
-                <div class="xc gn gg jn/2 i">
+
+                <div class="xc gn gg jn/2 i animate__animated animate__fadeInLeft wow" data-wow-duration="2s"
+                    data-wow-delay="0.5s">
                     <div>
                         <img src="./images/shape-05.svg" alt="#" class="h -ud-left-5 x">
                         <img src="./images/about-01.png" alt="#" class="ib">
@@ -212,11 +219,14 @@
                     </div>
                 </div>
 
-               
-                <div class="jn/2 space-y-6">
+
+                <div class="jn/2 space-y-6 animate__animated animate__fadeInRight wow" data-wow-duration="2s"
+                    data-wow-delay="0.5s">
                     <h4 class="text-xl font-medium text-purple-800">Why Choose Us</h4>
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight">We Make Our customers happy by giving Best services.</h2>
-                    <p class="text-lg font-medium text-gray-1000">It is a long established fact that a reader will be distracted by the readable content of a page
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight">We
+                        Make Our customers happy by giving Best services.</h2>
+                    <p class="text-lg font-medium text-gray-1000">It is a long established fact that a reader will be
+                        distracted by the readable content of a page
                         when looking at its layout. The point of using Lorem Ipsum.</p>
                     <a href="https://www.youtube.com/watch?v=xcJtL7QggTI" class="vc wf hg mb">
                         <span class="tc wf xf be dd rg i gh ua">
@@ -235,12 +245,13 @@
     <!-- Our Team  -->
     <section class="our__team pt-25 pb-2 mt-30 mb-45 relative">
         <img class="absolute top-15 left-100 z-1" src="./images/shape-10.svg" alt="#">
-        <img class="absolute top-38 right-90 z-2" src="./images/shape-11.svg" alt="#">
-        <img class="absolute top-95 left-40 z-3" src="./images/shape-09.svg" alt="#">
+        <img class="Rotate__Animation absolute top-38 right-90 z-2" src="./images/shape-11.svg" alt="#">
+        <img class="Rotate__Animation absolute top-95 left-40 z-3" src="./images/shape-09.svg" alt="#">
         <img class="absolute top-1 right-3 z-4" src="./images/shape-08.svg" alt="#">
         <div class="absolute inset-0 bg-gray-100 z-0"></div>
         <div class="container mx-auto relative z-10">
-            <div class="team__content text-center space-y-4 mb-10 z-10">
+            <div class="animate__animated animate__fadeInDown wow team__content text-center space-y-4 mb-10 z-10"
+                data-wow-duration="2.5s" data-wow-delay="0.75s">
                 <h2 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight">Meet
                     With Our Creative <br /> Dedicated Team</h2>
                 <p class="text-lg font-semibold text-gray-1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -254,7 +265,8 @@
                 <div class="mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-20"
                     style="width: 90%; max-width: 900px;">
 
-                    <div class="team__member text-center relative">
+                    <div class="team__member text-center relative animate__animated animate__fadeInDown wow"
+                        data-wow-duration="2.3s" data-wow-delay="1s">
                         <img class="mx-auto rounded-md block w-full" src="./images/team-01.png" alt="Jemse Komorun">
                         <div class="overlay mx-auto rounded-md block relative">
                             <div class="overlay__icon flex justify-center items-center space-x-6 mt-5 mb-5">
@@ -268,7 +280,8 @@
                         <span class="text-gray-500 block">Product Manager</span>
                     </div>
 
-                    <div class="team__member text-center relative">
+                    <div class="team__member text-center relative animate__animated animate__fadeInDown wow"
+                        data-wow-duration="2.3s" data-wow-delay="1.1s">
                         <img class="mx-auto rounded-md block w-full" src="./images/team-02.png" alt="Jemse Komorun">
                         <div class="overlay mx-auto rounded-md block relative">
                             <div class="overlay__icon flex justify-center items-center space-x-6 mt-5 mb-5">
@@ -281,7 +294,8 @@
                         <span class="text-gray-500 block">Product Designer</span>
                     </div>
 
-                    <div class="team__member text-center relative">
+                    <div class="team__member text-center relative animate__animated animate__fadeInDown wow"
+                        data-wow-duration="2.3s" data-wow-delay="1.2s">
                         <img class="mx-auto rounded-md block w-full" src="./images/team-03.png" alt="Jemse Komorun">
                         <div class="overlay mx-auto rounded-md block relative">
                             <div class="overlay__icon flex justify-center items-center space-x-6 mt-5 mb-5">
@@ -306,7 +320,8 @@
     <!-- Services Offer  -->
     <section class="pt-35">
         <div class="container mx-auto space-y-10">
-            <div class="services__content text-center space-y-6">
+            <div class="animate__animated animate__fadeInDown wow services__content text-center space-y-6"
+                data-wow-duration="2.5s" data-wow-delay="0.75s">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight">We
                     Offer The Best Quality Service <br /> for You</h2>
                 <p class="text-lg font-semibold text-gray-1000">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -316,7 +331,8 @@
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 space-y-6 gap-8">
 
-                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                    data-wow-duration="2.3s" data-wow-delay="1s">
                     <img class="mb-8" src="./images/icon-04.svg" alt="#">
                     <a href="#">
                         <h5 class="mb-6 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Crafted for
@@ -326,7 +342,8 @@
                         adipiscing elit. In convallis tortor.</p>
                 </div>
 
-                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                    data-wow-duration="2.3s" data-wow-delay="1.1s">
                     <img class="mb-8" src="./images/icon-05.svg" alt="#">
                     <a href="#">
                         <h5 class="mb-6 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">
@@ -336,7 +353,8 @@
                         adipiscing elit. In convallis tortor.</p>
                 </div>
 
-                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                    data-wow-duration="2.3s" data-wow-delay="1.2s">
                     <img class="mb-8" src="./images/icon-06.svg" alt="#">
                     <a href="#">
                         <h5 class="mb-6 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">All
@@ -346,7 +364,8 @@
                         adipiscing elit. In convallis tortor.</p>
                 </div>
 
-                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                    data-wow-duration="2.4s" data-wow-delay="1.3s">
                     <img class="mb-8" src="./images/icon-07.svg" alt="#">
                     <a href="#">
                         <h5 class="mb-6 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Speed
@@ -356,7 +375,8 @@
                         adipiscing elit. In convallis tortor.</p>
                 </div>
 
-                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                    data-wow-duration="2.5s" data-wow-delay="1.4s">
                     <img class="mb-8" src="./images/icon-05.svg" alt="#">
                     <a href="#">
                         <h5 class="mb-6 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Fully
@@ -366,7 +386,8 @@
                         adipiscing elit. In convallis tortor.</p>
                 </div>
 
-                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 rounded-lg dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                    data-wow-duration="2.6s" data-wow-delay="1.5s">
                     <img class="mb-8" src="./images/icon-06.svg" alt="#">
                     <a href="#">
                         <h5 class="mb-6 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Regular
@@ -383,12 +404,13 @@
 
     <!-- Payment  -->
     <section class="payment pt-20 mt-20 overflow-hidden relative">
-      <img src="./images/shape-06.svg" alt="" class="absolute top-15 left-50">  
-      <img src="./images/shape-13.svg" alt="" class="absolute top-3 right-1">
-      <img src="./images/shape-12.svg" alt="" class="absolute bottom-1 left-2">
-      <img src="./images/shape-03.svg" alt="" class="absolute top-80 right-90">
+        <img src="./images/shape-06.svg" alt="" class="absolute top-15 left-50">
+        <img src="./images/shape-13.svg" alt="" class="absolute top-3 right-1">
+        <img src="./images/shape-12.svg" alt="" class="absolute bottom-1 left-2">
+        <img src="./images/shape-03.svg" alt="" class="absolute top-80 right-90">
         <div class="container mx-auto">
-            <div class="payment__title text-center">
+            <div class="payment__title text-center animate__animated animate__fadeInDown wow" data-wow-duration="2.5s"
+                data-wow-delay="0.75s">
                 <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight">We
                     Offer Great Affordable <br /> Premium Prices.</h2>
                 <p class="text-lg font-semibold text-gray-1000 mt-5">It is a long established fact that a reader will be
@@ -420,8 +442,8 @@
                     <div class="hidden p-4 rounded-lg dark:bg-gray-800" id="styled-profile" role="tabpanel"
                         aria-labelledby="profile-tab">
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                            <div
-                                class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                            <div class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                                data-wow-duration="2.3s" data-wow-delay="1.1s">
                                 <h5 class="mb-4 text-2xl font-medium text-black-500 dark:text-gray-400">Starter</h5>
                                 <div class="flex items-center items-baseline mt-12 px-29 text-gray-900 dark:text-white">
                                     <span class="text-5xl font-medium">$</span>
@@ -457,8 +479,8 @@
                                 <p class="DayFreeTrial text-2xl font-normal mt-8 mb-5">7-day free trial</p>
                             </div>
 
-                            <div
-                                class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                            <div class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                                data-wow-duration="2.3s" data-wow-delay="1.2s">
                                 <h5 class="mb-4 text-2xl font-medium text-black-500 dark:text-gray-400">Growth Plan</h5>
                                 <div class="flex items-center items-baseline mt-12 px-28 text-gray-900 dark:text-white">
                                     <span class="text-5xl font-medium">$</span>
@@ -494,8 +516,8 @@
                                 <p class="DayFreeTrial text-2xl font-normal mt-8 mb-5">7-day free trial</p>
                             </div>
 
-                            <div
-                                class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                            <div class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                                data-wow-duration="2.3s" data-wow-delay="1.3s">
                                 <h5 class="mb-4 text-2xl font-medium text-black-500 dark:text-gray-400">Business</h5>
                                 <div class="flex items-center items-baseline mt-12 px-26 text-gray-900 dark:text-white">
                                     <span class="text-5xl font-medium">$</span>
@@ -535,8 +557,8 @@
                     <div class="hidden p-4 rounded-lg dark:bg-gray-800" id="styled-contacts" role="tabpanel"
                         aria-labelledby="contacts-tab">
                         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-                            <div
-                                class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                            <div class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                                data-wow-duration="2.3s" data-wow-delay="1.1s">
                                 <h5 class="mb-4 text-2xl font-medium text-black-500 dark:text-gray-400">Starter</h5>
                                 <div class="flex items-center items-baseline mt-12 px-25 text-gray-900 dark:text-white">
                                     <span class="text-5xl font-medium">$</span>
@@ -572,8 +594,8 @@
                                 <p class="DayFreeTrial text-2xl font-normal mt-8 mb-5">7-day free trial</p>
                             </div>
 
-                            <div
-                                class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                            <div class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                                data-wow-duration="2.3s" data-wow-delay="1.2s">
                                 <h5 class="mb-4 text-2xl font-medium text-black-500 dark:text-gray-400">Growth Plan</h5>
                                 <div class="flex items-center items-baseline mt-12 px-25 text-gray-900 dark:text-white">
                                     <span class="text-5xl font-medium">$</span>
@@ -609,8 +631,8 @@
                                 <p class="DayFreeTrial text-2xl font-normal mt-8 mb-5">7-day free trial</p>
                             </div>
 
-                            <div
-                                class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                            <div class="w-full text-center justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-8 dark:bg-gray-800 dark:border-gray-700 animate__animated animate__fadeInDown wow"
+                                data-wow-duration="2.3s" data-wow-delay="1.3s">
                                 <h5 class="mb-4 text-2xl font-medium text-black-500 dark:text-gray-400">Business</h5>
                                 <div class="flex items-center items-baseline mt-12 px-23 text-gray-900 dark:text-white">
                                     <span class="text-5xl font-medium">$</span>
@@ -655,19 +677,17 @@
 
 
 
+    <!-- BackToTop  -->
+    <a href="#" class="cd-top text-replace js-cd-top backtotop"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="./libs/BackToTop/assets/js/util.js"></script>
+    <!-- util functions included in the CodyHouse framework -->
+    <script src="./libs/BackToTop/assets/js/main.js "></script>
 
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
-
+    <!-- Wow JS  -->
+    <script src="./libs/Wow.js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- Flowbite  -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
