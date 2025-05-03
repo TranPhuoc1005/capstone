@@ -1,0 +1,311 @@
+@media (width >= 769px) {
+    #lightboxOverlay, #lightbox {
+        min-width: var(--content-width) !important;
+        width: 100% !important;
+    }
+
+    .sp320, .sp375, .sp425 {
+        display: none;
+    }
+
+    .wow {
+        animation-duration: 1s;
+        animation-delay: .2s;
+    }
+
+    .sp {
+        display: none !important;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--main-cl);
+    }
+
+    .to-top:hover {
+        background: #f36a8d;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+        -ms-touch-action: none;
+        touch-action: none;
+        -webkit-overflow-scrolling: auto;
+    }
+
+    .projects-item {
+        &:hover {
+            .projects-cnt {
+                top: 0;
+            }
+        }
+    }
+    .contact {
+        &__right {
+            &--message {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .clients {
+        &__item {
+            a {
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .blog__item {
+        .img {
+            &:hover {
+                .readmore {
+                    top: 0;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            .btn {
+                &:hover {
+                    a {
+                        background-color: #f36a8d;
+                    }
+                }
+            }
+        }
+        h4 {
+            &:hover {
+                a {
+                    color: #4e6bff;
+                }
+            }
+        }
+    }
+    .contact__left {
+        &--social {
+            dd {
+                a {
+                    &:hover {
+                        background-color: #4e6bff;
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contact__right {
+        .btn a {
+            &:hover {
+                color: #fff;
+                box-shadow: 0 0 #000, 0 0 #0000, 0 0 #000, 0 0 #0000, 0px 10px 25px rgba(78, 107, 255, 0.2);
+            }
+        }
+    }
+    .swiper-next-prev {
+        > div {
+            &:hover {
+                background-color: #4e6bff;
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+}
+
+@media(width >= 1290px) {
+    .container {
+        max-width: 1290px;
+    }
+}
+
+@media (width >= 992px) {
+    .blog {
+        .container {
+            max-width: 1310px;
+        }
+    }
+    .projects {
+        .container {
+            max-width: 1460px;
+        }
+    }
+    .clients {
+        .container {
+            max-width: 1390px;
+        }
+    }
+}
+
+@media (769px <= width <= 1024px) {
+    .contact {
+        .container {
+            max-width: 1024px !important;
+        }
+    }
+    .blog__cnt {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact {
+        &__left, &__right {
+            padding: 30px;
+        }
+    }
+}
+
+
+@media(1px <= width <= 768px) {
+    .container {
+        max-width: 100% !important;
+    }
+    h4 {
+        font-size: 22px !important;
+    }
+
+    .testimonials__item--cnt .desc p {
+        --min-view: 320;
+        --max-view: 768;
+    }
+    .projects-wrapper {
+        display: block;
+    }
+    .projects-sizer, .projects-item {
+        width: 100% !important;
+    }
+
+    .testimonials {
+        padding-bottom: 80px;
+        &__item {
+            flex-direction: column;
+            gap: 30px;
+            &--img {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            &--cnt {
+                .desc {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .counter {
+        padding: 80px 0;
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+        }
+        &__item {
+            width: 40%;
+            .num {
+                font-size: 30px;
+                line-height: 36px;
+            }
+            .ttl {
+                font-size: 16px;
+            }
+        }
+    }
+    .button-group {
+        gap: 20px;
+    }
+    .clients {
+        padding-top: 80px;
+    }
+    .clients {
+        &__cnt {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding-bottom: 80px;
+        }
+        &__item {
+            width: 100%;
+        }
+    }
+    .blog {
+        padding: 80px 0;
+        &__cnt {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &__item {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+    }
+    .contact {
+        padding: 80px 0;
+        &__left, &__right {
+            width: 100%;
+            padding: 30px;
+        }
+        &__left {
+            .shape {
+                &1 {
+                    top: 20px;
+                    right: 20px;
+                    left: unset;
+                }
+                &2 {
+                    top: unset;
+                    bottom: 20px;
+                    right: 20px;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &__right {
+            &--input {
+                gap: 30px;
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+                > div {
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .cta .btn a {
+        margin-left: 0 !important;
+    }
+    .ft__cnt {
+        padding: 80px 0;
+    }
+    
+}
+
+@media(525px <= width <= 768px) {
+    .blog {
+        &__cnt {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        &__item {
+            &--info {
+                padding: 10px;
+                .row1 {
+                    gap: 9px;
+                }
+                p {
+                    font-size: min(2.286vw, 16px);
+                }
+                > div {
+                    gap: 5px;
+                }
+            }
+        }
+    }
+}
